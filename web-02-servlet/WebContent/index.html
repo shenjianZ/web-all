@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICode</title>
+</head>
+<body>
+    <h1>Welcome to AICode!</h1>
+    <p>Please ask me a question related to computer knowledge.</p>
+    <script>
+        const ai = {
+            answer: function(question) {
+                if (question.includes("What is the capital of France?")) {
+                    return "Paris";
+                } else if (question.includes("Who is the current president of the United States?")) {
+                    return "Joe Biden";
+                } else {
+                    return "I'm sorry, I don't know the answer to that question.";
+                }
+            }
+        }
+
+        function askQuestion() {
+            const question = prompt("Ask me a question related to computer knowledge:");
+            const answer = ai.answer(question);
+            alert(answer);
+        }
+
+        askQuestion();
+    </script>
+    <form method="get" action="userServlet">
+        用户名:<input type="text"  name="username"/>
+        <input type="submit" value="校验"/>
+    </form>
+<br/>
+    <form method="post" action="servlet-lifecycle">
+        用户名:<input type="text"  name="username"/>
+        <input type="submit" value="校验"/>
+    </form>
+</body>
+</html>
