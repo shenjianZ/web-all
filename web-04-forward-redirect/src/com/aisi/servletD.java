@@ -21,6 +21,8 @@ import java.io.IOException;
 public class servletD extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //设置请求体的解码字符集
+        req.setCharacterEncoding("UTF-8");
         System.out.println("ServletD执行…………");
 //        resp.sendRedirect("servletE");
 //        resp.sendRedirect("a.html");
