@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class TestMD5Util {
     @Test
     public void testEncrypt(){
-        String encrypt = MD5Util.encrypt("123456");
+        String encrypt = MD5Util.encrypt("111111");
         System.out.println(encrypt);
     }
 }

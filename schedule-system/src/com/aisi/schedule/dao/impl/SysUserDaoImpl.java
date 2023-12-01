@@ -14,11 +14,22 @@ public class SysUserDaoImpl extends BaseDao implements SysUserDao {
      * @return  返回数据库受影响的行数
      */
     @Override
-    public int addUser(SysUser user) {
-        String sql="insert into sys_user values(?,?,?);";
-        int row;
-        row = baseUpdate(sql,user.getUid(), user.getUsername(), user.getUserPwd());
-        return row;
+    public int addSysUser(SysUser user) {
+        String sql="insert into sys_user values(DEFAULT,?,?);";
+        int rows;
+        rows = baseUpdate(sql, user.getUsername(), user.getUserPwd());
+        return rows;
+    }
+
+    /**
+     * @param username
+     * @return
+     */
+    @Override
+    public SysUser findByUsername(String username) {
+        String sql="select uid,username,user_pwd userPwd from sys_user where username=?;";
+        List<SysUser> sysUserList = baseQuery(SysUser.class, sql,username);
+        return sysUserList!=null && !sysUserList.isEmpty() ? sysUserList.get(0) :null;
     }
 
     /**
