@@ -38,4 +38,51 @@ public class SysScheduleDaoImpl extends BaseDao implements SysScheduleDao {
         return scheduleList;
     }
 
+    /**
+     * @param uid
+     * @return
+     */
+    @Override
+    public List<SysSchedule> findItemByUid(int uid) {
+        String sql="select sid,uid,title,completed from sys_schedule where uid=?;";
+        List<SysSchedule> scheduleList;
+        scheduleList = baseQuery(SysSchedule.class, sql, uid);
+        return scheduleList;
+    }
+
+    /**
+     * @param uid
+     * @return
+     */
+    @Override
+    public Integer addDefaultSchedule(int uid) {
+        String sql = "insert into sys_schedule value(default,?,'new Item',0)";
+        int rows;
+        rows = baseUpdate(sql, uid);
+        return rows;
+    }
+
+    /**
+     * @param schedule
+     * @return
+     */
+    @Override
+    public Integer updateSchedule(SysSchedule schedule) {
+        String sql="update sys_schedule set title=?,completed=? where sid=?;";
+        int rows;
+        rows = baseUpdate(sql, schedule.getTitle(), schedule.getCompleted(), schedule.getSid());
+        return rows;
+    }
+
+    /**
+     * @param sid
+     * @return
+     */
+    @Override
+    public Integer removeSchedule(int sid) {
+       String sql="delete from sys_schedule where sid=?;";
+        int rows;
+        rows=baseUpdate(sql,sid);
+        return  rows;
+    }
 }

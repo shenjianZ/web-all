@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Context docBase="C:/Users/15202/IdeaProjects/web-all/schedule-system/WebContent">
+  <Resources cacheMaxSize="10240">
+    <PreResources base="C:/Users/15202/IdeaProjects/web-all/out/production/schedule-system" className="org.apache.catalina.webresources.DirResourceSet" webAppMount="/WEB-INF/classes"/>
+    <PostResources base="C:/Users/15202/IdeaProjects/web-all/schedule-system/WebContent/WEB-INF/lib/druid-1.1.21.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/druid-1.1.21.jar"/>
+    <PostResources base="C:/Users/15202/IdeaProjects/web-all/schedule-system/WebContent/WEB-INF/lib/lombok-1.18.24.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/lombok-1.18.24.jar"/>
+    <PostResources base="C:/Users/15202/IdeaProjects/web-all/schedule-system/WebContent/WEB-INF/lib/opentest4j-1.2.0.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/opentest4j-1.2.0.jar"/>
+    <PostResources base="C:/Users/15202/IdeaProjects/web-all/schedule-system/WebContent/WEB-INF/lib/junit-jupiter-5.9.2.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/junit-jupiter-5.9.2.jar"/>
+    <PostResources base="C:/Users/15202/IdeaProjects/web-all/schedule-system/WebContent/WEB-INF/lib/apiguardian-api-1.1.2.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/apiguardian-api-1.1.2.jar"/>
+    <PostResources base="C:/Users/15202/IdeaProjects/web-all/schedule-system/WebContent/WEB-INF/lib/junit-jupiter-api-5.9.2.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/junit-jupiter-api-5.9.2.jar"/>
+    <PostResources base="C:/Users/15202/IdeaProjects/web-all/schedule-system/WebContent/WEB-INF/lib/junit-jupiter-engine-5.9.2.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/junit-jupiter-engine-5.9.2.jar"/>
+    <PostResources base="C:/Users/15202/IdeaProjects/web-all/schedule-system/WebContent/WEB-INF/lib/junit-jupiter-params-5.9.2.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/junit-jupiter-params-5.9.2.jar"/>
+    <PostResources base="C:/Users/15202/IdeaProjects/web-all/schedule-system/WebContent/WEB-INF/lib/junit-platform-engine-1.9.2.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/junit-platform-engine-1.9.2.jar"/>
+    <PostResources base="C:/Users/15202/IdeaProjects/web-all/schedule-system/WebContent/WEB-INF/lib/mysql-connector-java-5.1.36.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/mysql-connector-java-5.1.36.jar"/>
+    <PostResources base="C:/Users/15202/IdeaProjects/web-all/schedule-system/WebContent/WEB-INF/lib/junit-platform-commons-1.9.2.jar" className="org.apache.catalina.webresources.FileResourceSet" webAppMount="/WEB-INF/lib/junit-platform-commons-1.9.2.jar"/>
+  </Resources>
+</Context>

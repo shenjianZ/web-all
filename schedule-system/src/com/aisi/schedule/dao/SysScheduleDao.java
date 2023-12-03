@@ -10,4 +10,11 @@ public interface SysScheduleDao {
 
     List<SysSchedule> findAll();
 
+    List<SysSchedule> findItemByUid(int uid);
+
+    Integer addDefaultSchedule(int uid);
+
+    Integer updateSchedule(SysSchedule schedule);
+
+    Integer removeSchedule(int sid);
 }
