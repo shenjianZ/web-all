@@ -10,4 +10,18 @@ public interface NewsUserService {
      * @return
      */
     NewsUser finaByUsername(String username);
+
+    /**
+     *
+     * @param userId
+     * @return
+     */
+    NewsUser findByUid(Integer userId);
+
+    /**
+     *
+     * @param registUser
+     * @return
+     */
+    int registUser(NewsUser registUser);
 }
